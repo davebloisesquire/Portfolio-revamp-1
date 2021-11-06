@@ -1,0 +1,200 @@
+body {
+  background-color: #f8f8ff;
+}
+/* Cover the basics
+Text and Main Divs and Such */
+main {
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+}
+h1 {
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+h2 {
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+}
+img {
+  width: 100%;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Header Title Section */
+div.title-section {
+  width: content;
+}
+
+/* Header Navigation Section */
+nav {
+  width: content;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  padding: 20px 20px 0 20px;
+}
+
+nav li {
+  transition: padding 300ms linear;
+  padding: 10px;
+  display: inline-block;
+}
+
+nav li:hover {
+  text-shadow: 1px 1px 2px #999;
+  transition: padding 300ms linear;
+  padding: 10px 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Sections */
+section {
+  display: block;
+  margin: 20px;
+  font-family: 'Roboto', sans-serif;
+  /* I don't think I like this border or radius anymore, but I want to keep it here incase I change my mind. */
+  /* border-radius: 7px;
+  border: black solid 1px; */
+  padding: 20px 10px 50px 10px;
+  box-shadow: 5px -5px 10px #ddd;
+  background-color: #eee;
+}
+
+/* About Us Section */
+.about-us-content {
+  display: flex;
+}
+
+.image {
+  width: 360px;
+  padding: 5px;
+}
+
+.text {
+  width: 360px;
+  padding: 5px;
+}
+
+/* Work Section */
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+section.contact-me p a {
+  margin-bottom: 10px;
+}
+
+header .title-section {
+  padding: 20px;
+}
+
+article.work {
+  color: white;
+  flex: 1 0 50%;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  /* Adding a little grayscale when the mouse isn't hovering on it. So it will seem more interesting and burst with color when hovered over */
+  filter: grayscale(100%);
+  transition: filter 200ms linear;
+}
+
+article.work:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transition: filter 200ms linear;
+}
+
+article.work a {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+article.work h3 {
+  text-shadow: 1px 1px 8px black;
+  padding: 10px;
+}
+
+article.work.top {
+  flex-basis: 100%;
+  background-image: url(./assets/images/Horiseon-Screenshot.png);
+}
+
+article.work.second {
+  background-image: url(https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+}
+
+article.work.third {
+  background-image: url(https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80);
+}
+
+article.work.fourth {
+  background-image: url(https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1966&q=80);
+}
+
+article.work.fifth {
+  background-image: url(https://images.unsplash.com/photo-1557853197-aefb550b6fdc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+}
+
+/* Footer Section */
+footer {
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  text-align: right;
+  background-color: #ddd;
+}
+
+/* Small Screen Version Changes */
+@media screen and (max-width: 800px) {
+  /* Small Screen Work Area */
+  article.work {
+    flex: 1 0 100%;
+  }
+
+  /* about us section */
+  .about-us-content {
+    display: block;
+  }
+
+  .image {
+    width: 100%;
+    padding: 0;
+  }
+
+  .text {
+    width: 100%;
+    padding: 0;
+  }
+}

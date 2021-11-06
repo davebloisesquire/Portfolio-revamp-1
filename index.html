@@ -1,102 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- style sheets -->
-  <link rel="stylesheet" href="./reset.css">
-  <link rel="stylesheet" href="./style.css">
-  <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <!-- Script -->
-  <script src="./script.js"></script>
-  <title>Dave Blois' Portfolio</title>
-</head>
-
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dave Blois' Web Dev Portfolio</title>
+    <script src="https://kit.fontawesome.com/15181efa86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
 <body>
-  <header>
-    <!-- Title Section of the Header -->
-    <div class="title-section">
-      <h1>Dave Blois' Portfolio</h1>
-      <h2>I'm not messing around</h2>
-    </div>
-    <!-- Navigation Menu -->
-    <nav>
-      <ul>
-        <a href="#" class="nav-link">
-          <li>Home</li>
-        </a>
-        <a href="#about-us" class="nav-link">
-          <li>About Me</li>
-        </a>
-        <a href="#my-work" class="nav-link">
-          <li>My Work</li>
-        </a>
-        <a href="#contact-me" class="nav-link">
-          <li>Contact Me</li>
-        </a>
-      </ul>
-    </nav>
-  </header>
-  <!-- Main area for the various sections -->
-  <main>
-    <!-- About Me Section -->
-    <section id="about-us">
-      <h2>About Me</h2>
-      <div class="about-us-content">
-        <div class="image">
-          <img src="./assets/images/CoolDave.jpg" alt="Dave">
-        </div>
-        <div class="text">
-          <h3>Hello there.</h3>
-          <br>
-          <p>Welcome to my humble portfolio. Have a look around. Feel free to try all the stuff out.</p>
-          <p>I'm a web developer who's on a search for creative projects</p>
-          <br>
-          <p>I'm currently working my way through the UC Davis Coding Bootcamp.</p>
-          <p>I know HTML, CSS, some JavaScript.</p>
-        </div>
-      </div>
-    </section>
-    <!-- My Work Section -->
-    <section id="my-work">
-      <h2>My Work</h2>
-      <div class="gallery">
-        <article class="work top">
-          <a href="https://davebloisesquire.github.io/super-duper-disco/"><h3>First BootCamp Project</h3></a>
-        </article>
-        <article class="work second"><a href="https://davebloisesquire.github.io/super-duper-disco/"><h3>Project 2</h3></a></article>
-        <article class="work third"><a href="https://davebloisesquire.github.io/super-duper-disco/"><h3>Project 3</h3></a></article>
-        <article class="work fourth"><a href="https://davebloisesquire.github.io/super-duper-disco/"><h3>Project 4</h3></a></article>
-        <article class="work fifth"><a href="https://davebloisesquire.github.io/super-duper-disco/"><h3>Project 5</h3></a></article>
-      </div>
-      <br>
-      <a href="#">Click here to see all projects</a>
-    </section>
-    <!-- Contact Me Section -->
-    <section id="contact-me">
-      <h2>Wanna get in touch?</h2>
-      <h3>I'd love to hear from you</h3>
-      <br>
-      <p><a href="mailto:dave@blois.ca">dave@blois.ca</a></p>
-      <br>
-      <p><a href="tel:8319208595">831.920.8595</a></p>
-      <br>
-      <p><a href="https://github.com/davebloisesquire">My GitHub</a></p>
-      <br>
-    </section>
-  </main>
-  <!-- Footer Area (Only thing in here is the Copyright info, which is mostly for show.) -->
-  <footer>
-    copyright Dave Blois 2021.
-  </footer>
-</body>
 
+  <section class="hero is-medium">
+    <div class="hero-head">
+      <div class="container">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item is-active">
+                Home
+              </a>
+              <a class="navbar-item">
+                Blog Posts
+              </a>
+            </div>
+
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#">
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <a href="#">
+                  <i class="fas fa-phone-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">Dave Blois</h1>
+        <h2 class="subtitle">
+          Web Developer at Large
+        </h2>
+      </div>
+    </div>
+  </section>
+  <section class="blog-posts">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-10 is-offset-1">
+          <div class="columns featured-post is-multiline">
+            <div class="column is-12 post">
+              <article class="columns featured">
+                <div class="column is-7 post-img ">
+                  <img src="./assets/images/CoolDave.jpg" alt="Dave Blois">
+                </div>
+                <div class="column is-5 featured-content va">
+                  <div>
+                    <h1 class="title post-title">Welcome!</h1>
+                    <p class="post-excerpt">Why hello there. Welcome to my portfolio page. I'm Dave. I'm a Full Stack Web Developer in search of creative projects.<br>I'm currently working my way through the UC Davis Coding Bootcamp and am ready for my next challenge!</p>
+                  </div>
+
+                </div>
+              </article>
+            </div>
+          </div>
+          <hr>
+          <div class="columns">
+            <div class="column">
+              <h2 class="title">Contact Me</h2>
+
+            </div>
+          </div>
+
+          <hr>
+          <div class="columns is-multiline">
+            <div class="column post is-6">
+              <!-- DAY PLANNER -->
+              <article class="columns is-multiline">
+                <div class="column is-12 post-img">
+                  <img src="./assets/images/DayPlanner.png" alt="Featured Image">
+                </div>
+                <div class="column is-12 featured-content ">
+                  <h3 class="heading post-category">Category Name</h3>
+                  <h1 class="title post-title">Day Planner</h1>
+                  <p class="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ratione harum eaque, animi nulla tempore quis, quam voluptatum.</p>
+                  <br>
+                  <a href="#" class="button is-primary">See on GitHub</a>
+                </div>
+              </article>
+            </div>
+            <div class="column post is-6">
+              <article class="columns is-multiline">
+                <div class="column is-12 post-img">
+                  <img src="./assets/images/desktop-screenshot.png" alt="Featured Image">
+                </div>
+                <div class="column is-12 featured-content ">
+                  <h3 class="heading post-category">Weather App</h3>
+                  <h1 class="title post-title">Slightly Longer Blog Post Title</h1>
+                  <p class="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ratione harum eaque, animi nulla tempore quis, quam voluptatum.</p>
+                  <br>
+                  <a href="#" class="button is-primary">Read More</a>
+                </div>
+              </article>
+            </div>
+            <div class="column post is-4">
+              <article class="columns is-multiline">
+                <div class="column is-12 post-img">
+                  <img src="./assets/images/Quiz.png" alt="Featured Image">
+                </div>
+                <div class="column is-12 featured-content ">
+                  <h3 class="heading post-category">JavaScript Quiz</h3>
+                  <h1 class="title post-title">Slightly Longer Blog Post Title</h1>
+                  <p class="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ratione harum eaque, animi nulla tempore quis, quam voluptatum.</p>
+                  <br>
+                  <a href="#" class="button is-primary">Read More</a>
+                </div>
+              </article>
+            </div>
+            <div class="column post is-4">
+              <article class="columns is-multiline">
+                <div class="column is-12 post-img">
+                  <img src="./assets/images/MainPasswordGenerator.png" alt="Featured Image">
+                </div>
+                <div class="column is-12 featured-content ">
+                  <h3 class="heading post-category">Category Name</h3>
+                  <h1 class="title post-title">Password Generator</h1>
+                  <p class="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ratione harum eaque, animi nulla tempore quis, quam voluptatum.</p>
+                  <br>
+                  <a href="#" class="button is-primary">Read More</a>
+                </div>
+              </article>
+            </div>
+            <div class="column post is-4">
+              <article class="columns is-multiline">
+                <div class="column is-12 post-img">
+                  <img src="https://cdn.emk.dev/templates/post-img.png" alt="Featured Image">
+                </div>
+                <div class="column is-12 featured-content ">
+                  <h3 class="heading post-category">Category Name</h3>
+                  <h1 class="title post-title">Project Film!</h1>
+                  <p class="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ratione harum eaque, animi nulla tempore quis, quam voluptatum.</p>
+                  <br>
+                  <a href="#" class="button is-primary">Read More</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</body>
 </html>
